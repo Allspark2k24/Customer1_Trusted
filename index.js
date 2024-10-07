@@ -47,7 +47,6 @@ async function customTimeFetchCloudWatchData(timeframeLength, timeframeUnit) {
         }
     }
 }
-
 function cleanMetricName(metricName) {
     let cleanMetricName = metricName.replace(/_/g, ' ').split(' ');
     cleanMetricName = cleanMetricName.map(word => word.charAt(0).toUpperCase() + word.slice(1));    
